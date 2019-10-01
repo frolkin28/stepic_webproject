@@ -4,7 +4,6 @@ def wsgi_app(environ, start_response):
     body = bytes('\r\n'.join(query), encoding='utf-8')
     headers = [
         ('Content-Type', 'text/plain'),
-        ('Content-Length', str(len(body)))
     ]
     start_response(status, headers)
     return iter([body])
