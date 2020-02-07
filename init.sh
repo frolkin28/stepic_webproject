@@ -11,5 +11,5 @@ sudo /etc/init.d/gunicorn restart
 sudo /etc/init.d/mysql start
 mysql -uroot -e "create database if not exists qa"
 
-sudo /home/box/web/ask/manage.py makemigrations
+sudo /home/box/web/ask/manage.py makemigrations qa
 sudo /home/box/web/ask/manage.py migrate
