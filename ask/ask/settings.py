@@ -72,6 +72,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'qa',
         'USER': 'root',
+	'init_command': "SET sql_mode='STRICK_TRANS_TABLES'",
     }
 }
 
